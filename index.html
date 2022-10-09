@@ -79,7 +79,7 @@
           <textarea id="answer" name="answer" rows="4" cols="40">Answer carefully...</textarea><br>
           <label for="answer">How confident are you in your answer?</label>
           <input list="scale" id="scale" name="scale">
-          <datalist id="scale">
+          <datalist id="onetofive">
             <option value="1">
             <option value="2">
             <option value="3">
@@ -87,15 +87,17 @@
             <option value="5">
           </datalist><br>
           <label for="yesorno">Do you like penguins?</label>
-          <select id="yesorno" name="yesorno" form="yesorno">
+          <select id="yesorno" name="yesorno">
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select><br>
-          <button type="submit" form="submit" value="submit">Submit</button>
+          <button type="submit" value="submit">Submit</button>
         </fieldset>
       </forms>
       <details>
-        <img src="https://unsplash.com/photos/Ak81Vc-kCf4" alt="penguin" width="250">
+        <summary>
+          <img src="https://unsplash.com/photos/Ak81Vc-kCf4" alt="penguin" width="250">
+        </summary>
       </details>
   </body>
 </html>
