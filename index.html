@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style> 
+      title
+      {
+        color: blueviolet;
+      }
+    </style>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <link rel="fluid-icon" type="image/png" href="/fluid-icon.png">
     <title>Meeting Minutes</title>
@@ -10,24 +17,24 @@
       <h1 id="website">A Website!</h1>
       <div><strong>CSE 110 Intitial Group Meeting</strong></div>
       <div><em>10/8/22 @ 5:30PM</em></div>
-      <div><a href="http://ieng6.ucsd.edu/~cs110x/static/syllabus/">CSE 110 Course Website</a></div>
+      <div><a href="http://ieng6.ucsd.edu/~cs110x/static/syllabus/" target="_blank">CSE 110 Course Website</a></div>
     </header>
-      <h2 id="links">Jump Links</h2>
+      <h4 id="links">Jump Links</h4>
       <nav>
-        <ol>
-          <li><a href="#Attendence">Attendence</a></li>
-          <li><a href="#Agenda">Agenda</a></li>
-          <li><a href="#Recordings">Recordings</a></li>
+        <ol class="grid-container">
+          <li class="item1"><a href="#Attendence">Attendence</a></li>
+          <li class="item2"><a href="#Agenda">Agenda</a></li>
+          <li id="item3"><a href="#Recordings">Recordings</a></li>
         </ol>
       </nav>
     <hr>
     <main>
       <section>
-        <h2 id="attendence">Attendence Report</h2>
-        <ul>
-          <li><input type="checkbox">Kevin Truong</li>
-          <li><input type="checkbox">Kevin Wang</li>
-          <li><input type="checkbox">Kevin Nguyen</li>
+        <h2 style="color:blue;text-align:left;" id="attendence">Attendence Report</h2>
+        <ul class="flex-container">
+          <li class="flex-item"><input type="checkbox">Kevin Truong</li>
+          <li class="flex-item"><input type="checkbox">Kevin Wang</li>
+          <li class="flex-item"><input type="checkbox">Kevin Nguyen</li>
         </ul>
       </section>
       <section>
@@ -76,11 +83,11 @@
           <img src="https://unsplash.com/photos/Ak81Vc-kCf4" alt="penguin" width="250">
         </summary>
       </details>
-      <h1>What do you think of King Penguin?</h1>
+      <h2 class="ridge">What do you think of King Penguin?</h2>
     </footer>
     <form>
       <fieldset>
-        <p>Enter here.</p>
+        <p class="dotted">Enter here.</p>
         <textarea id="answer" name="answer" rows="4" cols="40">Answer carefully...</textarea><br>
         <label for="answer">How confident are you in your answer?</label>
         <input list="onetofive" id="scale" name="scale">
